@@ -32,8 +32,6 @@ $ARR_MERGED_WILD_LIST = array(
     'assoc-amazon.*' => null,
     'clkservice*.youdao.com' => null,
     'dsp*.youdao.com' => null,
-    'ad*.sina.com.cn' => null,
-    'sax*.sina.com.cn' => null,
     'pussl*.com' => null,
     'putrr*.com' => null,
     'ad.*.360.cn' => null,
@@ -67,13 +65,10 @@ $ARR_MERGED_WILD_LIST = array(
 );
 
 $ARR_REGEX_LIST = array(
-    '/01daa\.[a-z]+\.com$/' => null,
     '/9377[a-z]{2}\.com$/' => null,
-//    '/^[1-2]\.[0-9a-z\.\-]+\.(com|cn|net|cc|me)$/' => null,
-//    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
-    '/^(\S+\.)?ad([0-9]|m|s)?\./' => null,
+    '/^(\S+\.)?ad([\d]|m|s)?\./' => null,
     '/^(\S+\.)?affiliat(es|ion|e)\./' => null,
-    '/afgr[0-9]{1,2}\.com$/' => null,
+    '/afgr[\d]{1,2}\.com$/' => null,
     '/^(\S+\.)?analytics(\-|\.)/' => null,
     '/^(\S+\.)?counter(\-|\.)/' => null,
     '/^(\S+\.)?pixels?\./' => null,
@@ -84,6 +79,14 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?tongji\./' => null,
     '/^(\S+\.)?toolbar\./' => null,
     '/^(\S+\.)?adservice\.google\./' => null,
+    '/^(\S+\.)?d[\d]+\.sina(img)?(\.com)?\.cn/' => null,
+    '/^(\S+\.)?sax[\dns]?\.sina\.com\.cn/' => null,
+    '/delivery([\d]{2}|dom|modo).com$/' => null,
+    '/^(\S+\.)?[c-s]ads(abs|abz|ans|anz|ats|atz|del|ecs|ecz|ims|imz|ips|ipz|kis|kiz|oks|okz|one|pms|pmz)\.com/' => null,
+    '/^([a-z\d\-]+\.)?(?!xn--)[^\.\/]{40,}\.(com|net|cn)(\.cn)?$/' => null, //超长域名
+    '/^(\S+\.)?11599[\da-z]{2,20}\.com$/' => null, //"澳门新葡京"系列
+    '/^(\S+\.)?61677[\da-z]{0,20}\.com$/' => null, //"澳门新葡京"系列
+    // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
 
 //对通配符匹配或正则匹配增加的额外赦免规则
@@ -98,6 +101,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||log.mmstat.com^' => 0, //修复优酷视频显示禁用了cookie
     '@@||adm.10jqka.com.cn^' => 0, //同花顺
     '@@||center-h5api.m.taobao.com^' => 1, //h5页面
+    '@@||app.adjust.com^' => 1, //https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/186
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单

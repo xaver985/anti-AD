@@ -62,7 +62,7 @@ return array(
     'miaozhen.com' => array('miaozhen.com'),
     'rubiconproject.com' => array('rubiconproject.com'),
     'adsame.com' => array('adsame.com'),
-    'hexun.com' => array('hexun.com'),
+    'hexun.com' => array('hxsame.hexun.com'),
     '2345.com' => array('2345.com'),
     '51.la' => array('51.la'),
     '55.la' => array('55.la'),
@@ -272,7 +272,7 @@ return array(
         'abroad-ad.kingsoft-office-service.com',
     ),
     'amap.com' => array('logs.amap.com'),
-    'tt114.net' => array('tt114.net'),
+    'tt114.net' => array('tt114.net'), //例如http://www.tt114.net/html/tlink.html
     'ip138.com' => array('api.ip138.com'),
     'taobao.com' => array(
       'ip.taobao.com',
@@ -283,7 +283,7 @@ return array(
       'openjmacs.m.taobao.com',
     ),
     'aiclk.com' => array('aiclk.com'),
-    '5ubei.com' => array('5ubei.com'),
+    '5ubei.com' => array('5ubei.com'), //统计类例如http://dnm.5ubei.com:7098/hlink.html
     'jpush.cn' => array('jpush.cn'),
     'jpush.io' => array('jpush.io'),
     'jiguang.cn' => array('jiguang.cn'),
@@ -424,6 +424,126 @@ return array(
     ),
 
 
+    //一窝恶意劫持搞推广的域名
+    'duoroumao.cn' => array(
+      's.duoroumao.cn', //广告分发，例如https://s.duoroumao.cn/yxs191.js
+      'duoroumao.cn',
+    ),
+    'geakr.com' => array(
+      'geakr.com', //广告 例如：https://www.geakr.com/tkl/cp.js?channel_id=3
+      'www.geakr.com',
+    ),
+    'qichetiemo.info' => array(
+      'qichetiemo.info',
+      'about.qichetiemo.info', //广告，例如 https://about.qichetiemo.info/apf/mkdjJSjcs113 ，此页面有js加密代码，应属于恶意网站
+    ),
+    'bbhyqp.com' => array(
+      'bbhyqp.com', //“澳门真金”。。推广页面 例如 https://bbhyqp.com/mifiqp/index.html
+    ),
+    'sntzq.com' => array(
+      'sntzq.com', //https://c.sntzq.com/init/proxy.html?v=1.2
+      'c.sntzq.com',
+    ),
+    '35kds.com' => array(
+      '35kds.com',
+      'n.35kds.com', //https://n.35kds.com/Exposead/index/?re=
+    ),
+    'mobaders.com' => array(
+        'mobaders.com', //行为统计，例如http://d1.mobaders.com/cnzzA/1260857752
+        'd1.mobaders.com',
+        'd2.mobaders.com',
+        'd3.mobaders.com',
+        'd4.mobaders.com',
+        'd5.mobaders.com',
+        'd6.mobaders.com',
+        'd7.mobaders.com',
+        'd8.mobaders.com',
+        'd9.mobaders.com',
+    ),
+    '61677.com' => array( //澳门新葡京
+        '61677.com',
+        'www.61677.com',
+    ),
+    '111ol.com' => array(
+        '111ol.com',
+        'www.111ol.com',
+        '111ol.111ol.com',
+    ),
+    '61677c.com' => array(
+        '61677c.com',
+    ),
+    'www-61677.com' => array(
+        'www-61677.com'
+    ),
+    '11599jgj.com' => array(
+        '11599jgj.com',
+        'www.11599jgj.com'
+    ),
+    'duote.com' => array( //https://zhuanlan.zhihu.com/p/111435102
+      'duote.com',
+      'www.duote.com',
+    ),
+    'zzb6.cn' => array(
+      'zzb6.cn',
+      'download.zzb6.cn',
+      'i.zzb6.cn',
+    ),
+    'xp666.com' => array(
+      'xp666.com',
+      'download.xp666.com',
+    ),
+    'dh810.com' => array(
+      'dh810.com',
+    ),
+    'dh820.com' => array(
+      'dh820.com',
+    ),
+    'bsrkt.com' => array(//http://www.bsrkt.com/diy/b/commander/tips/index.html
+      'bsrkt.com',
+      'www.bsrkt.com'
+    ),
+    'zjsyawqj.cn' => array(//http://js.zjsyawqj.cn/diy/b/commander/tips/default.js
+      'zjsyawqj.cn',
+      'www.zjsyawqj.cn',
+      'js.zjsyawqj.cn',
+      'download.zjsyawqj.cn',
+    ),
+    'v4dwkcv.com' => array(// http://c.v4dwkcv.com/html/click/23421_5605.html
+      'v4dwkcv.com',
+      'c.v4dwkcv.com',
+    ),
+    'he2d.com' => array(// 相关http://c.v4dwkcv.com/html/click/23421_5605.html
+      'ss2.he2d.com',
+      'he2d.com'
+    ),
+    'sdqoi2d.com' => array(// 统计 http://j.sdqoi2d.com/click/ffb.php
+      'j.sdqoi2d.com',
+      'sdqoi2d.com'
+    ),
+    'youhuiguan.com' => array(// 神药？ http://cr.youhuiguan.com/attachments/201908/28/20/3658-5lmj04.jpg
+      'youhuiguan.com',
+      'cr.youhuiguan.com'
+    ),
+    'doumaibiji.cn' => array(// http://diy.doumaibiji.cn/diy/js/b.js
+      'doumaibiji.cn',
+      'diy.doumaibiji.cn',
+    ),
+    'oneplus.net' => array(
+        'open.oneplus.net',
+    ),
+    'live.com' => array(
+        'nexusrules.officeapps.live.com',
+        'nexus.officeapps.live.com',
+    ),
+    'twitter.com' => array(
+        'p.twitter.com',
+    ),
+    'nsimg.net' => array(
+        'm2.nsimg.net'
+    ),
+    'microsoft.com' => array(
+        'mobile.pipe.aria.microsoft.com'
+    ),
 
 
 
