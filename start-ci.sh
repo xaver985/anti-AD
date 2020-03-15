@@ -9,6 +9,7 @@ easylist=(
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://easylist.to/easylist/fanboy-annoyance.txt"
   "https://easylist.to/easylist/easyprivacy.txt"
+  "https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt"
 )
 
 hosts=(
@@ -25,6 +26,15 @@ strict_hosts=(
 dead_hosts=(
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/domains.dead.txt"
   "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/hostnames.dead.txt"
+)
+
+easylist_full=(
+  ""
+)
+
+hosts_full=(
+  "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
+  "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt"
 )
 
 rm -f ./origin-files/easylist*
