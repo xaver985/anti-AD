@@ -62,6 +62,7 @@ $ARR_MERGED_WILD_LIST = array(
     '*tsdk.vivo.com.cn' => null,
     '*.mmstat.com' => null,
     'sf*-ttcdn-tos.pstatp.com' => null,
+    'f-log*.grammarly.io' => null,
 );
 
 $ARR_REGEX_LIST = array(
@@ -86,6 +87,8 @@ $ARR_REGEX_LIST = array(
     '/^([a-z\d\-]+\.)?(?!xn--)[^\.\/]{40,}\.(com|net|cn)(\.cn)?$/' => null, //超长域名
     '/^(\S+\.)?11599[\da-z]{2,20}\.com$/' => null, //"澳门新葡京"系列
     '/^(\S+\.)?61677[\da-z]{0,20}\.com$/' => null, //"澳门新葡京"系列
+    '/^(\S+\.)?[0-9a-f]{16,}\.com$/' => null, //16个字符以上的16进制域名
+    '/^(\S+\.)?[0-9a-z]{16,}\.xyz$/' => null, //16个字符以上的.xyz域名
     // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
 
@@ -102,6 +105,8 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||adm.10jqka.com.cn^' => 0, //同花顺
     '@@||center-h5api.m.taobao.com^' => 1, //h5页面
     '@@||app.adjust.com^' => 1, //https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/186
+    '@@||widget.weibo.com^' => 0, //微博外链
+    '@@||uland.taobao.com^' => 1, //淘宝coupon #83
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
@@ -112,6 +117,7 @@ $ARR_WHITE_RULE_BLK_LIST = array(
 //针对上游通配符规则中anti-AD不予采信的规则，即通配符黑名单
 $ARR_WILD_BLK_LIST = array(
     'cnt*rambler.ru' => null,
+    'um*.com' => null,
 );
 
 if(PHP_SAPI != 'cli'){

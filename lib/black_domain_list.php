@@ -42,6 +42,8 @@ return array(
         'mark.l.qq.com',
         'report.qq.com',
         'rcgi.video.qq.com',
+        'rlog.video.qq.com',
+
     ),
     'openstorage.cn' => array(
         'iflyad.bjb.openstorage.cn'
@@ -260,6 +262,7 @@ return array(
     ),
     'jd.com' => array(
         'mercury.jd.com', //大数据收集，用户行为埋点上报
+        'wl.jd.com',
     ),
     'ixigua.com' => array(
         'v3-ad.ixigua.com', //移动广告
@@ -383,6 +386,7 @@ return array(
     ),
     'aliyuncs.com' => array(
         'sspmiaoshuo.cn-hangzhou.log.aliyuncs.com', //日志收集
+        'arms-retcode.aliyuncs.com',
     ),
 
     '186078.com' => array(
@@ -421,6 +425,27 @@ return array(
     'ggsafe.com' => array(
       'ggsafe.com',
       'wifi.ggsafe.com',
+    ),
+    '2345.cn' => array(
+        '2345.cn', //广告联盟
+        'dl.2345.cn',
+        'download.2345.cn',
+        'houtai.2345.cn',
+        'jifen.2345.cn',
+        'jifendownload.2345.cn',
+        'minipage.2345.cn',
+        'wan.2345.cn',
+        'zhushou.2345.cn',
+    ),
+    '19869.com' => array(
+        '19869.com',
+        'a.19869.com',
+        'b.19869.com',
+    ),
+    '1drj.com' => array( //第三方劫持
+        '1drj.com',
+        'md.1drj.com',
+        'xs.1drj.com',
     ),
 
 
@@ -542,7 +567,45 @@ return array(
         'm2.nsimg.net'
     ),
     'microsoft.com' => array(
-        'mobile.pipe.aria.microsoft.com'
+        'mobile.pipe.aria.microsoft.com',
+        'events.data.microsoft.com',
+    ),
+    'leixjun.com' => array(//恶意诱导下载app
+      'leixjun.com',
+      'zq2.leixjun.com',
+    ),
+    'xi9p.com' => array(//诈骗网址
+      'xi9p.com'
+    ),
+
+    'doukekan.cn' => array(//广告平台
+        'doukekan.cn',
+        'y3.doukekan.cn',
+    ),
+    'dzdkw9.cn' => array(//恶意推广 #65
+        'dzdkw9.cn',
+        'm.dzdkw9.cn',
+    ),
+
+    'feeddsp.cn' => array(
+        '1.feeddsp.cn', //游戏推广落地页
+    ),
+    'huya.com' => array(
+        'ylog.huya.com', // #86
+    ),
+
+    'grammarly.io' => array(
+        'f-log-extension.grammarly.io',
+        'f-log-mobile-ios.grammarly.io',
+        'f-log-at.grammarly.io',
+    ),
+    'ximalaya.com' => array(
+        'adse.wsa.ximalaya.com',
+        'linkeye.ximalaya.com',
+        'location.ximalaya.com',
+    ),
+    'googleapis.com' => array(
+        'footprints-pa.googleapis.com',
     ),
 
 

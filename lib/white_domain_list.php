@@ -83,6 +83,30 @@ return array(
     'dl.360safe.com' => 0, //360驱动下载
     'resolver.msg.xiaomi.net' => 0, //小爱音箱语音识别
     'api.sec.miui.com' => 0, //miui自带骚扰拦截相关
+    'iface2.iqiyi.com' => 0, //爱奇艺 相关视频推荐
+    'apm3.music.163.com' => 0, //网易云音乐
+    'mbd.baidu.com' => 0, //百度百家号
+    'suo.im' => 0, //短网址服务
+    'hinet.net' => 0,
+    'hubpd.com' => 0, //党媒平台网址
+    'i.niupic.com' => 0, //免费图床地址
+    'api-game.meizu.com' => 0, //魅族商店更新游戏
+    'image.uczzd.cn' => 0, //uc头条的图片 #67
+    'zconfig.alibabausercontent.com' => 0, //阿里云app登录失效 #69
+    'dg.k.jd.com' => 0, //京东不能跳转app
+    'orbit.jd.com' => 0, //京东不能跳转app
+    'kepler.jd.com' => 0, //京东不能跳转app
+    'widget.weibo.com' => 0, //微博误杀
+    'sailthru.com' => 0, //误杀epicgame.com，因CNAME #73
+    't1.58cdn.com.cn' => 0, // 58同城cdn #75
+    't2.58cdn.com.cn' => 0, // 58同城cdn #75
+    't3.58cdn.com.cn' => 0, // 58同城cdn #75
+    'ddns.net' => 0, // #76
+    'pushbullet.com' => 0, // #77
+    'now.sh' => 0, // #78
+    'zimuku.la' => 0, // #84
+    'qihucdn.com' => 0, // #89
+
 
 
     'herokuapp.com' => -1,
