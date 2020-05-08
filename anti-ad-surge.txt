@@ -5725,10 +5725,15 @@ DOMAIN-SUFFIX,rem-track.bild.de
 DOMAIN-SUFFIX,bildirnet.com
 DOMAIN-SUFFIX,bildirt.com
 DOMAIN-SUFFIX,bileth.pw
-DOMAIN-SUFFIX,dataflow.biliapi.com
-DOMAIN-SUFFIX,data.bilibili.com
-DOMAIN-SUFFIX,miniapp.bilibili.com
-DOMAIN-SUFFIX,cm.bilibili.com
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square))
+URL-REGEX,https://api.bilibili.com/x/v2/dm/advert
+URL-REGEX,https://app.bilibili.com/x/v2/param
+URL-REGEX,https://app.bilibili.com/x/resource/abtest
+URL-REGEX,http://app.bilibili.com/x/v2/dataflow/report-TINYGIF
+URL-REGEX,https://app.bilibili.com/x/v2/search/(defaultword|hot|recommend|resource)
+URL-REGEX,https://app.bilibili.com/x/v2/rank.*rid=(168|5)
+URL-REGEX,https://api.bilibili.com/pgc/season/rank/cn
+AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFFIX,hdslb.com))))
 DOMAIN-SUFFIX,biliqpvehf.com
 DOMAIN-SUFFIX,billionfocus.com
 DOMAIN-SUFFIX,billionpops.com
